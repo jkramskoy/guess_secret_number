@@ -1,8 +1,3 @@
-#varible with your secret number
-#user input for their number
-#if secret number == user input print congrads
-#else print wrong number
-
 
 var_secret = "8"
 
