@@ -13,7 +13,7 @@ while(True):
         print(number1 / number2)
     else:
         print("error")
-        break
+
 
 
 
