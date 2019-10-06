@@ -6,5 +6,6 @@ while (True):
 
     if var_secret == var_guess:
         print("congratulation, it is number 8")
+        break
     else:
         print("Sorry, but number is wrong")
