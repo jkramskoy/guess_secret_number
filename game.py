@@ -11,6 +11,9 @@ with open("save.txt","r") as score_file:
     score_list = json.loads(score_file.read())
     print("top score: {0}".format(str(score_list)))
 
+# sort the list of dicts per attempts
+new_score_list = sorted(score_list, key=lambda k: k['attempts'])[:3]
+
 name = input("please enter your name: ")
 
 
