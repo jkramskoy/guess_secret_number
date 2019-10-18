@@ -6,6 +6,7 @@ import datetime
 score_list = []
 secret_num = random.randint (1,30)
 attempts = 0
+wrong_guesses = []
 
 with open("save.txt","r") as score_file:
     score_list = json.loads(score_file.read())
@@ -24,19 +25,22 @@ while True:
     if user_input == secret_num:
         print("you did a great job.It's number{0}".format(str(secret_num)))
         print("attempts needed:{0}".format(str(attempts)))
-        cur_attempt = {"attempts":attempts, "date":str (datetime.datetime.now()), "name": name}
+        cur_attempt = {"attempts":attempts, "date":str (datetime.datetime.now()), "name": name, "wrong_guesses": wrong_guesses }
         print(str(cur_attempt["attempts"]) + " attempts, date: " + cur_attempt.get("date"))
 
         score_list.append(cur_attempt)
         with open("save.txt","w") as score_file:
               score_file.write(json.dumps(score_list))
-
-
         break
     elif user_input > secret_num:
+        wrong_guesses.append(user_input)
         print("try smaller")
     elif user_input < secret_num:
+        wrong_guesses.append(user_input)
         print("try bigger")
+
+
+
 
 
 
