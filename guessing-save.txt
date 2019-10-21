@@ -1,0 +1,1 @@
+[{"attempts": 2, "date": "2019-10-21 14:42:20.347655", "name": "foi", "wrong_guesses": [22]}, {"attempts": 6, "date": "2019-10-21 14:41:05.871171", "name": "yuo", "wrong_guesses": [22, 15, 9, 11, 13]}, {"attempts": 6, "date": "2019-10-21 14:54:21.059800", "name": "eij", "wrong_guesses": [22, 17, 9, 6, 4]}]
